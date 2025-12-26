@@ -19,9 +19,9 @@ def is_enabled(value, default):
 
 # Bot information *
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['API_ID', '22321078'])
+API_HASH = environ['API_HASH', '9960806d290cf4170e43355fcc3687ac']
+BOT_TOKEN = environ['BOT_TOKEN', "8200587392:AAGOoy6_fjH3BkI4jfYH6XbSJdbNyc8qfHQ"]
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -191,4 +191,5 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 # 🥰  Thank you for giving me credit @LazyDeveloperr  🥰
 # for any error please contact me -> telegram@LazyDeveloperr or insta @LazyDeveloperr 
 # rip paid developers 🤣 - >> No need to buy paid source code while @LazyDeveloperr is here 😍😍
+
 
